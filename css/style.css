@@ -1,0 +1,20 @@
+:root {
+  /** COLORS **/
+  --background-color: #232323;
+  --header-color: white;
+  --navigation-menu-color: #89cff0;
+  --link-color: #89cff0;
+  --work-experience-year-color: #9e9e9e;
+  --work-experience-description-color: #d6d6d6;
+  --work-experience-skills-color: #9e9e9e;
+
+  /** FONT **/
+}
+
+.background {
+  background-color: var(--background-color);
+}
+
+h1 {
+  color: #fff; /* Make sure this isn't the same as the background */
+}
