@@ -124,3 +124,33 @@ span {
 .footer p {
   margin: 0; /* Remove default margin */
 }
+
+/*******************/
+/** LOGO SECTION **/
+/*******************/
+.top-left-logo {
+  position: fixed; /* Stays at the top-left of the viewport */
+  top: 0; /* Align to the very top */
+  left: 0; /* Align to the very left */
+  z-index: 10; /* Make sure it's on top of other elements */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}
+
+.top-left-logo img {
+  width: 150px; /* Adjust this to make the SVG larger */
+  height: auto; /* Keep the aspect ratio */
+}
+
+.nav-header {
+  padding-top: 100px; /* Adjust this based on the height of the SVG */
+}
+
+/* Responsive scaling for mobile */
+@media (max-width: 768px) {
+  .top-left-logo img,
+  .top-left-logo svg {
+    width: 80px; /* Smaller size for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
