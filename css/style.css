@@ -35,26 +35,22 @@ body {
 }
 
 h1,
+h2,
+h3,
 h4,
+h5,
 h6 {
   color: var(--header-color);
   font-family: "Anonymous Pro", monospace;
   margin: 0; /* Remove default margin */
+  font-weight: 400;
 }
 
 h1 {
   font-weight: 700;
 }
 
-h4 {
-  font-weight: 400;
-}
-
-h6 {
-  font-weight: 400;
-}
-
-.nav-header{
+.nav-header {
   margin-bottom: var(--big-text-padding);
 }
 
@@ -70,7 +66,7 @@ h6 {
   font-weight: 400; /* Match the font weight of h4 */
   font-style: normal; /* Ensure normal font style */
   text-decoration: none; /* Remove underline */
-  font-size: 1.25rem; /* Set the font size to match h4 */
+  font-size: 1.5rem; /* Set the font size to match h4 */
 }
 
 .link:hover {
