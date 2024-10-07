@@ -154,3 +154,39 @@ span {
     height: auto; /* Maintain aspect ratio */
   }
 }
+
+/*******************/
+/** WORK SECTION **/
+/*******************/
+.job {
+  margin-bottom: var(--big-text-padding);
+}
+
+.row {
+  display: flex;
+}
+
+/* Left align the year and ensure it's aligned with the header */
+.year {
+  text-align: left;
+  min-width: 150px; /* Adjust this width if necessary */
+}
+
+.details h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+.details p {
+  font-size: 1.2em;
+  color: #d3d3d3;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+.technologies {
+  font-size: 1.1em;
+  color: #a9a9a9;
+  margin-top: 10px;
+}
