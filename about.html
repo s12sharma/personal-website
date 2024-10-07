@@ -27,6 +27,17 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- NAVBAR-->
+    <!-- At the top of each HTML file -->
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector(".navbar-container").innerHTML = data;
+        });
+    </script>
+
     <title>Karanvir Heer</title>
   </head>
 
@@ -43,41 +54,7 @@
           <!-- ========  -->
           <!-- NAV BAR -->
           <!-- ========  -->
-          <div class="nav-header">
-            <div class="row">
-              <h1>karanvir heer</h1>
-            </div>
-
-            <div
-              class="row"
-              style="padding-top: var(--header-text-padding)"
-            ></div>
-
-            <div class="row">
-              <h4>software engineer</h4>
-            </div>
-
-            <div
-              class="row"
-              style="padding-top: var(--header-text-padding)"
-            ></div>
-
-            <div class="row links">
-              <span>
-                <a href="about.html" class="link">about</a>
-              </span>
-              <span class="link-item">|</span>
-              <span class="link-item"
-                ><a href="projects.html" class="link">projects</a></span
-              >
-              <span class="link-item">|</span>
-              <span class="link-item"
-                ><a href="work.html" class="link">work</a></span
-              >
-            </div>
-          </div>
-
-          <div style="padding-top: var(--big-text-padding)"></div>
+          <div class="navbar-container"></div>
 
           <!-- ========  -->
           <!-- ABOUT SECTION -->
@@ -128,14 +105,14 @@
                 <a href="resume.pdf" class="link">resume</a>
               </li>
               <li>
-                <a href="https://github.com/yourusername" class="link"
-                  >github</a
-                >
+                <a href="https://github.com/yourusername" class="link">
+                  github
+                </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/yourusername" class="link"
-                  >linkedin</a
-                >
+                  >linkedin
+                </a>
               </li>
             </ul>
           </div>
@@ -159,5 +136,15 @@
     <!-- <script src="js/other-stuff/reading-stuff.js"></script> -->
 
     <!-- Projects (if needed) -->
+
+    <script>
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.body.insertAdjacentHTML("beforeend", data);
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
   </body>
 </html>
