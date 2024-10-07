@@ -10,7 +10,9 @@
 
   /** PADDING **/
   --big-text-padding: 30px;
-  --inner-text-padding: 10px;
+  --inner-text-padding: 15px;
+  --header-text-padding: 5px;
+  --list-text-padding: 5px;
 }
 
 /** FONT **/
@@ -26,6 +28,7 @@
   font-style: normal;
 }
 
+/** GENERAL **/
 .background {
   background-color: var(--background-color);
 }
@@ -50,14 +53,15 @@ h1 {
   font-weight: 700;
 }
 
-.nav-header {
-  margin-bottom: var(--big-text-padding);
+li {
+  margin-bottom: var(--list-text-padding);
 }
+
+/** NAV BAR **/
 
 .links {
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Center items vertically */
-  padding: 0;
 }
 
 .link {
@@ -80,4 +84,10 @@ h1 {
 
 span {
   color: var(--header-color);
+}
+
+/** LINKS SECTION **/
+.links-list {
+  list-style-type: disc;
+  color: white;
 }
