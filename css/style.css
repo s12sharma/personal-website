@@ -1,5 +1,7 @@
 :root {
+  /*******************/
   /** COLORS **/
+  /*******************/
   --background-color: #232323;
   --header-color: white;
   --navigation-menu-color: #89cff0;
@@ -8,14 +10,18 @@
   --work-experience-description-color: #d6d6d6;
   --work-experience-skills-color: #9e9e9e;
 
+  /*******************/
   /** PADDING **/
+  /*******************/
   --big-text-padding: 30px;
   --inner-text-padding: 15px;
   --header-text-padding: 5px;
   --list-text-padding: 5px;
 }
 
+/*******************/
 /** FONT **/
+/*******************/
 .anonymous-pro-regular {
   font-family: "Anonymous Pro", monospace;
   font-weight: 400;
@@ -28,7 +34,9 @@
   font-style: normal;
 }
 
+/*******************/
 /** GENERAL **/
+/*******************/
 .background {
   background-color: var(--background-color);
 }
@@ -55,17 +63,24 @@ h1 {
 
 li {
   margin-bottom: var(--list-text-padding);
+  color: var(--header-color); /* Match the header color defined in :root */
+  font-family: "Anonymous Pro", monospace; /* Match the font family */
+  font-weight: 400; /* Match the font weight of h4 */
+  font-style: normal; /* Ensure normal font style */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.5rem; /* Set the font size to match h4 */
 }
 
+/*******************/
 /** NAV BAR **/
-
+/*******************/
 .links {
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Center items vertically */
 }
 
 .link {
-  color: var(--header-color); /* Match the header color defined in :root */
+  color: var(--link-color); /* Match the header color defined in :root */
   font-family: "Anonymous Pro", monospace; /* Match the font family */
   font-weight: 400; /* Match the font weight of h4 */
   font-style: normal; /* Ensure normal font style */
@@ -86,8 +101,26 @@ span {
   color: var(--header-color);
 }
 
+/*******************/
 /** LINKS SECTION **/
+/*******************/
 .links-list {
   list-style-type: disc;
   color: white;
+}
+
+/*******************/
+/** FOOTER SECTION **/
+/*******************/
+.footer {
+  background-color: var(--background-color); /* Match your background color */
+  color: var(--header-color); /* Text color */
+  padding: 20px 0; /* Vertical padding */
+  position: relative; /* Positioning */
+  bottom: 0; /* Aligns to the bottom */
+  width: 100%; /* Full width */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
 }
