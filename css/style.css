@@ -7,7 +7,7 @@
   --navigation-menu-color: #89cff0;
   --link-color: #89cff0;
   --work-experience-year-color: #9e9e9e;
-  --work-experience-description-color: #d6d6d6;
+  --work-experience-description-color: #ebebeb;
   --work-experience-skills-color: #9e9e9e;
 
   /*******************/
@@ -50,7 +50,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   color: var(--header-color);
   font-family: "Anonymous Pro", monospace;
   margin: 0; /* Remove default margin */
@@ -129,7 +130,7 @@ span {
 /** LOGO SECTION **/
 /*******************/
 .top-left-logo {
-  position: fixed; /* Stays at the top-left of the viewport */
+  position: absolute; /* Stays at the top-left of the viewport */
   top: 0; /* Align to the very top */
   left: 0; /* Align to the very left */
   z-index: 10; /* Make sure it's on top of other elements */
@@ -175,18 +176,42 @@ span {
 .details h3 {
   font-size: 1.8em;
   font-weight: bold;
-  color: #f4f4f4;
 }
 
 .details p {
   font-size: 1.2em;
-  color: #d3d3d3;
   line-height: 1.5em;
-  margin-top: 10px;
+}
+
+.details h5,
+p {
+  margin-bottom: var(--inner-text-padding);
+}
+
+.details h3 {
+  margin-bottom: var(--list-text-padding);
 }
 
 .technologies {
   font-size: 1.1em;
-  color: #a9a9a9;
-  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+/** COLORS **/
+
+.details h3,
+h5 {
+  color: white;
+}
+
+p.description {
+  color: var(--work-experience-description-color);
+}
+
+p.technologies {
+  color: var(--work-experience-skills-color);
+}
+
+.year h4 {
+  color: var(--work-experience-year-color);
 }
