@@ -45,6 +45,10 @@ body {
   padding: 20px;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 h1,
 h2,
 h3,
@@ -214,4 +218,24 @@ p.technologies {
 
 .year h4 {
   color: var(--work-experience-year-color);
+}
+
+/*******************/
+/** PROJECTS SECTION **/
+/*******************/
+.link-header {
+  color: var(--link-color); /* Set color to match .link */
+  font-family: "Anonymous Pro", monospace; /* Match the font family */
+  font-weight: 700; /* Same font weight as h1 */
+  font-style: normal; /* Ensure normal font style */
+  text-decoration: none; /* Remove underline */
+  font-size: 2.5rem; /* Font size can be adjusted to your preference */
+  margin: 0; /* Remove default margin, similar to h1 */
+  line-height: 1.2; /* Adjust line height to center vertically */
+}
+
+.responsive-video {
+  width: 100%; /* Make video take the full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 600px; /* Optional: Set a maximum width for larger screens */
 }
