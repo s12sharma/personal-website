@@ -47,7 +47,7 @@
   <body class="background">
     <!-- SVG in the top-left corner -->
     <div class="top-left-logo">
-      <img src="assets/logo.svg" alt="Logo" />
+      <img src="/assets/logo.svg" alt="Logo" />
     </div>
 
     <div class="container">
@@ -145,7 +145,7 @@
 
     <script>
       // Load footer
-      fetch("footer.html")
+      fetch("/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.body.insertAdjacentHTML("beforeend", data);
