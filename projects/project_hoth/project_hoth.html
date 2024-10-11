@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ========  -->
+  <!-- HEAD -->
+  <!-- ========  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript Library -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- NAVBAR-->
+    <!-- At the top of each HTML file -->
+    <script>
+      fetch("/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector(".navbar-container").innerHTML = data;
+        });
+    </script>
+
+    <title>Karanvir Heer</title>
+  </head>
+
+<body class="background"></body>
+    <!-- SVG in the top-left corner -->
+    <div class="top-left-logo">
+        <img src="/assets/logo.svg" alt="Logo" />
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="navbar-container"></div>
+
+                <!-- About Section -->
+                <div class="row">
+                    <a href="/projects.html" class="link-header">projects</a>
+                    <h1>/</h1>
+                    <h1>project-hoth</h1>
+                </div>
+
+                <div class="row" style="padding-top: var(--big-text-padding)"></div>
+
+                <div class="row">
+                    <h2 class="bold">description</h2>
+                </div>
+
+                <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+
+                <div class="row">
+                    <h5>
+                        I developed a 3D game using C++ and OpenGL, inspired by the Star Wars "Battle of Hoth." The game features interactive gameplay where players control a defensive cannon, using it to fend off waves of attacking walker robots. The cannon is fully mouse-controlled, firing projectiles to destroy the incoming enemies. The game includes collision detection, custom 3D models, and GPU-based shaders for realistic lighting, shading, and texture mapping.
+                    </h5>
+                </div>
+
+                <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+
+                <div class="row">
+                  <p class="project-technologies bold">
+                    C++ • OpenGL
+                  </p>
+                </div>
+
+                <div class="row" style="padding-top: var(--big-text-padding)"></div>
+
+                <div class="row">
+                    <h2 class="bold">video demo</h2>
+                </div>
+
+                <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+
+                <div class="row">
+                    <video class="responsive-video" controls>
+                        <source src="/assets/projects/project_hoth/project_hoth_demo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+
+                <div class="row" style="padding-top: var(--big-text-padding)"></div>
+
+                <div class="row">
+                    <h2 class="bold">link</h2>
+                </div>
+
+                <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+                <!-- Bullet Points for Links -->
+                <div class="row">
+                    <ul class="links-list">
+                    <li>
+                        <a href="https://github.com/karanvirheer/project-hoth" class="link"
+                        >github</a
+                        >
+                    </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        // Load footer
+        fetch("/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML("beforeend", data);
+            })
+            .catch(error => console.error("Error loading footer:", error));
+    </script>
+</body>
+</html>
