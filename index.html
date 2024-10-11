@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ========  -->
+  <!-- HEAD -->
+  <!-- ========  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript Library -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- NAVBAR-->
+    <!-- At the top of each HTML file -->
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector(".navbar-container").innerHTML = data;
+        });
+    </script>
+
+    <title>Karanvir Heer</title>
+  </head>
+
+  <!-- ========  -->
+  <!-- BODY -->
+  <!-- ========  -->
+  <body class="background">
+    <!-- SVG in the top-left corner -->
+    <div class="top-left-logo">
+      <img src="assets/logo.svg" alt="Logo" />
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- ========  -->
+        <!-- MAIN COLUMN -->
+        <!-- ========  -->
+        <div class="col-md-8">
+          <!-- ========  -->
+          <!-- NAV BAR -->
+          <!-- ========  -->
+          <div class="navbar-container"></div>
+
+          <!-- ========  -->
+          <!-- ABOUT SECTION -->
+          <!-- ========  -->
+          <div class="row">
+            <h1>about</h1>
+          </div>
+
+          <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+
+          <div class="row">
+            <h5>
+              I’m a recent Computer Science graduate from Toronto Metropolitan
+              University with experience in software engineering and
+              cybersecurity. I’ve interned as a Junior Software Engineer for the
+              Ontario Government and as an IAM intern at Enbridge, contributing
+              to application development and security.
+            </h5>
+
+            <div
+              class="row"
+              style="padding-top: var(--inner-text-padding)"
+            ></div>
+
+            <h5>
+              Beyond my technical work, I’m passionate about personal growth and
+              creativity. I’m a beginner violinist (with some piano skills), an
+              avid runner and gym-goer, and a graphic design enthusiast who
+              enjoys exploring visual storytelling.
+            </h5>
+          </div>
+
+          <div style="padding-top: var(--big-text-padding)"></div>
+
+          <!-- ========  -->
+          <!-- LINKS SECTION -->
+          <!-- ========  -->
+          <div class="row">
+            <h1>links</h1>
+          </div>
+
+          <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+
+          <!-- Bullet Points for Links -->
+          <div class="row">
+            <ul class="links-list">
+              <li>
+                <a href="/assets/karanvir_heer_resume.pdf" class="link"
+                  >resume</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/karanvirheer" class="link">
+                  github
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/karanvirheer/" class="link"
+                  >linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ========  -->
+          <!-- OTHER STUFF SECTION -->
+          <!-- ========  -->
+          <div class="row other-stuff"></div>
+          <!-- ========  -->
+          <!-- MAIN COLUMN END -->
+          <!-- ========  -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ========  -->
+    <!-- JAVASCRIPT CODE -->
+    <!-- ========  -->
+
+    <!-- Other Stuff -->
+    <!-- <script src="js/other-stuff/reading-stuff.js"></script> -->
+
+    <!-- Projects (if needed) -->
+
+    <script>
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.body.insertAdjacentHTML("beforeend", data);
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
+  </body>
+</html>
