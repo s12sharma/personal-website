@@ -239,3 +239,8 @@ p.technologies {
   height: auto; /* Maintain the aspect ratio */
   max-width: 600px; /* Optional: Set a maximum width for larger screens */
 }
+
+p.project-technologies{
+  color: var(--work-experience-year-color);
+  font-size: 1.2rem;
+}
