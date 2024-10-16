@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ========  -->
+  <!-- HEAD -->
+  <!-- ========  -->
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8D4LGJS668"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8D4LGJS668");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon" />
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript Library -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- NAVBAR-->
+    <!-- At the top of each HTML file -->
+    <script>
+      fetch("/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector(".navbar-container").innerHTML = data;
+        });
+    </script>
+
+    <title>Karanvir Heer</title>
+  </head>
+
+<body class="background"></body>
+    <!-- SVG in the top-left corner -->
+    <div class="top-left-logo">
+        <img src="/assets/logo.svg" alt="Logo" />
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="navbar-container"></div>
+
+                <!-- About Section -->
+                <div class="row">
+                    <a href="/projects.html" class="link-header">projects</a>
+                    <h1>/</h1>
+                    <h1>personal-website</h1>
+                </div>
+
+                <div class="row" style="padding-top: var(--big-text-padding)"></div>
+
+                <div class="row">
+                    <h2 class="bold">description</h2>
+                </div>
+
+                <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+
+                <div class="row">
+                    <h5>
+                        Welcome to my personal website! Here, you’ll find a collection of my projects, which blend my skills in software engineering and graphic design. From web development to computer vision, I’ve worked on a range of innovative tools and applications. Feel free to explore interactive demos, project details, and links to my GitHub, where you can dive deeper into my code. This site reflects my passion for both technical problem-solving and creative design.
+                    </h5>
+                </div>
+
+                <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+
+                <div class="row">
+                  <p class="project-technologies bold">
+                    HTML • CSS • JavaScript
+                  </p>
+                </div>
+
+                <div class="row" style="padding-top: var(--big-text-padding)"></div>
+
+                <div class="row">
+                    <h2 class="bold">figma</h2>
+                </div>
+
+                <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+
+                <div class="row">
+
+                    <ul class="links-list">
+                    <li>
+                        <a
+                        href="https://www.figma.com/design/y9HwkOBfnqEuf26Z3z8Ci0/Personal-Website-Design?node-id=0-1&t=2BVamKgz25jsVuTn-1"
+                        class="link"
+                        >figma-design</a
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="row" style="padding-top: var(--big-text-padding)"></div>
+
+                <div class="row">
+                    <h2 class="bold">link</h2>
+                </div>
+
+                <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+                <!-- Bullet Points for Links -->
+                <div class="row">
+                    <ul class="links-list">
+                    <li>
+                        <a href="https://github.com/karanvirheer/personal-website" class="link"
+                        >github</a
+                        >
+                    </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        // Load footer
+        fetch("/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML("beforeend", data);
+            })
+            .catch(error => console.error("Error loading footer:", error));
+    </script>
+</body>
+</html>
