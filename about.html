@@ -121,17 +121,27 @@
           <div class="row">
             <ul class="links-list">
               <li>
-                <a href="/assets/karanvir_heer_resume_public.pdf" class="link"
+                <a
+                  href="/assets/karanvir_heer_resume_public.pdf"
+                  target="_blank"
+                  class="link"
                   >resume</a
                 >
               </li>
               <li>
-                <a href="https://github.com/karanvirheer" class="link">
+                <a
+                  href="https://github.com/karanvirheer"
+                  target="_blank"
+                  class="link"
+                >
                   github
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/karanvirheer/" class="link"
+                <a
+                  href="https://www.linkedin.com/in/karanvirheer/"
+                  target="_blank"
+                  class="link"
                   >linkedin
                 </a>
               </li>
@@ -164,6 +174,8 @@
         .then((response) => response.text())
         .then((data) => {
           document.body.insertAdjacentHTML("beforeend", data);
+          document.getElementById("current-year").textContent =
+            new Date().getFullYear();
         })
         .catch((error) => console.error("Error loading footer:", error));
     </script>

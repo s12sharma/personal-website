@@ -139,12 +139,12 @@
                 <div class="row">
                     <ul class="links-list">
                     <li>
-                        <a href="https://github.com/karanvirheer/Recyclops" class="link"
+                        <a href="https://github.com/karanvirheer/Recyclops" target="_blank" class="link"
                         >github</a
                         >
                     </li>
                     <li>
-                        <a href="https://devpost.com/software/machacks" class="link">devpost</a>
+                        <a href="https://devpost.com/software/machacks" target="_blank" class="link">devpost</a>
                     </li>
 
                     </ul>
@@ -158,6 +158,7 @@
             .then(response => response.text())
             .then(data => {
                 document.body.insertAdjacentHTML("beforeend", data);
+                document.getElementById("current-year").textContent = new Date().getFullYear();
             })
             .catch(error => console.error("Error loading footer:", error));
     </script>
