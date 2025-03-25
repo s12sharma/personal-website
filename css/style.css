@@ -2,7 +2,8 @@
   /*******************/
   /** COLORS **/
   /*******************/
-  --background-color: #232323;
+  /* --background-color: #232323; */
+  --background-color: #1a2334;
   --header-color: white;
   --navigation-menu-color: #89cff0;
   --link-color: #89cff0;
@@ -58,7 +59,8 @@ h6,
 p {
   color: var(--header-color);
   font-family: "Anonymous Pro", monospace;
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  /* Remove default margin */
   font-weight: 400;
 }
 
@@ -68,38 +70,54 @@ h1 {
 
 li {
   margin-bottom: var(--list-text-padding);
-  color: var(--header-color); /* Match the header color defined in :root */
-  font-family: "Anonymous Pro", monospace; /* Match the font family */
-  font-weight: 400; /* Match the font weight of h4 */
-  font-style: normal; /* Ensure normal font style */
-  text-decoration: none; /* Remove underline */
-  font-size: 1.5rem; /* Set the font size to match h4 */
+  color: var(--header-color);
+  /* Match the header color defined in :root */
+  font-family: "Anonymous Pro", monospace;
+  /* Match the font family */
+  font-weight: 400;
+  /* Match the font weight of h4 */
+  font-style: normal;
+  /* Ensure normal font style */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 1.5rem;
+  /* Set the font size to match h4 */
 }
 
 /*******************/
 /** NAV BAR **/
 /*******************/
 .links {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  /* Use flexbox for layout */
+  align-items: center;
+  /* Center items vertically */
 }
 
 .link {
-  color: var(--link-color); /* Match the header color defined in :root */
-  font-family: "Anonymous Pro", monospace; /* Match the font family */
-  font-weight: 400; /* Match the font weight of h4 */
-  font-style: normal; /* Ensure normal font style */
-  text-decoration: none; /* Remove underline */
-  font-size: 1.5rem; /* Set the font size to match h4 */
+  color: var(--link-color);
+  /* Match the header color defined in :root */
+  font-family: "Anonymous Pro", monospace;
+  /* Match the font family */
+  font-weight: 400;
+  /* Match the font weight of h4 */
+  font-style: normal;
+  /* Ensure normal font style */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 1.5rem;
+  /* Set the font size to match h4 */
 }
 
 .link:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
+  /* Underline on hover */
 }
 
 /* Add space around the vertical bar */
 .link-item {
-  margin: 0 10px; /* Add horizontal margin for spacing */
+  margin: 0 10px;
+  /* Add horizontal margin for spacing */
 }
 
 span {
@@ -118,45 +136,61 @@ span {
 /** FOOTER SECTION **/
 /*******************/
 .footer {
-  background-color: var(--background-color); /* Match your background color */
-  color: var(--header-color); /* Text color */
-  padding: 20px 0; /* Vertical padding */
-  position: relative; /* Positioning */
-  bottom: 0; /* Aligns to the bottom */
-  width: 100%; /* Full width */
+  background-color: var(--background-color);
+  /* Match your background color */
+  color: var(--header-color);
+  /* Text color */
+  padding: 20px 0;
+  /* Vertical padding */
+  position: relative;
+  /* Positioning */
+  bottom: 0;
+  /* Aligns to the bottom */
+  width: 100%;
+  /* Full width */
 }
 
 .footer p {
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  /* Remove default margin */
 }
 
 /*******************/
 /** LOGO SECTION **/
 /*******************/
 .top-left-logo {
-  position: absolute; /* Stays at the top-left of the viewport */
-  top: 0; /* Align to the very top */
-  left: 0; /* Align to the very left */
-  z-index: 10; /* Make sure it's on top of other elements */
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
-    contrast(100%);
+  position: absolute;
+  /* Stays at the top-left of the viewport */
+  top: 0;
+  /* Align to the very top */
+  left: 0;
+  /* Align to the very left */
+  z-index: 10;
+  /* Make sure it's on top of other elements */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
 .top-left-logo img {
-  width: 150px; /* Adjust this to make the SVG larger */
-  height: auto; /* Keep the aspect ratio */
+  width: 150px;
+  /* Adjust this to make the SVG larger */
+  height: auto;
+  /* Keep the aspect ratio */
 }
 
 .nav-header {
-  padding-top: 100px; /* Adjust this based on the height of the SVG */
+  padding-top: 100px;
+  /* Adjust this based on the height of the SVG */
 }
 
 /* Responsive scaling for mobile */
 @media (max-width: 768px) {
+
   .top-left-logo img,
   .top-left-logo svg {
-    width: 80px; /* Smaller size for mobile */
-    height: auto; /* Maintain aspect ratio */
+    width: 80px;
+    /* Smaller size for mobile */
+    height: auto;
+    /* Maintain aspect ratio */
   }
 }
 
@@ -174,7 +208,8 @@ span {
 /* Left align the year and ensure it's aligned with the header */
 .year {
   text-align: left;
-  min-width: 150px; /* Adjust this width if necessary */
+  min-width: 150px;
+  /* Adjust this width if necessary */
 }
 
 .details h3 {
@@ -224,23 +259,34 @@ p.technologies {
 /** PROJECTS SECTION **/
 /*******************/
 .link-header {
-  color: var(--link-color); /* Set color to match .link */
-  font-family: "Anonymous Pro", monospace; /* Match the font family */
-  font-weight: 700; /* Same font weight as h1 */
-  font-style: normal; /* Ensure normal font style */
-  text-decoration: none; /* Remove underline */
-  font-size: 2.5rem; /* Font size can be adjusted to your preference */
-  margin: 0; /* Remove default margin, similar to h1 */
-  line-height: 1.2; /* Adjust line height to center vertically */
+  color: var(--link-color);
+  /* Set color to match .link */
+  font-family: "Anonymous Pro", monospace;
+  /* Match the font family */
+  font-weight: 700;
+  /* Same font weight as h1 */
+  font-style: normal;
+  /* Ensure normal font style */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 2.5rem;
+  /* Font size can be adjusted to your preference */
+  margin: 0;
+  /* Remove default margin, similar to h1 */
+  line-height: 1.2;
+  /* Adjust line height to center vertically */
 }
 
 .responsive-video {
-  width: 100%; /* Make video take the full width of the container */
-  height: auto; /* Maintain the aspect ratio */
-  max-width: 600px; /* Optional: Set a maximum width for larger screens */
+  width: 100%;
+  /* Make video take the full width of the container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  max-width: 600px;
+  /* Optional: Set a maximum width for larger screens */
 }
 
-p.project-technologies{
+p.project-technologies {
   color: var(--work-experience-year-color);
   font-size: 1.2rem;
 }
