@@ -167,7 +167,8 @@ span {
   /* Align to the very left */
   z-index: 10;
   /* Make sure it's on top of other elements */
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
 }
 
 .top-left-logo img {
@@ -184,7 +185,6 @@ span {
 
 /* Responsive scaling for mobile */
 @media (max-width: 768px) {
-
   .top-left-logo img,
   .top-left-logo svg {
     width: 80px;
@@ -289,4 +289,10 @@ p.technologies {
 p.project-technologies {
   color: var(--work-experience-year-color);
   font-size: 1.2rem;
+}
+
+.project-logo {
+  width: 40%;
+  height: auto;
+  max-width: 600px;
 }
