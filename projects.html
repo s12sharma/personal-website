@@ -1,143 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!-- ========  -->
-<!-- HEAD -->
-<!-- ========  -->
+  <!-- ========  -->
+  <!-- HEAD -->
+  <!-- ========  -->
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D4LGJS668"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8D4LGJS668"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag("config", "G-8D4LGJS668");
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+      gtag("config", "G-8D4LGJS668");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
 
-  <!--FONT-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <!-- JQuery Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- JavaScript Library -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript Library -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- NAVBAR-->
-  <!-- At the top of each HTML file -->
-  <script>
-    fetch("navbar.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.querySelector(".navbar-container").innerHTML = data;
-      });
-  </script>
+    <!-- NAVBAR-->
+    <!-- At the top of each HTML file -->
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector(".navbar-container").innerHTML = data;
+        });
+    </script>
 
-  <title>Karanvir Heer</title>
-</head>
+    <title>Karanvir Heer</title>
+  </head>
 
-<!-- ========  -->
-<!-- BODY -->
-<!-- ========  -->
+  <!-- ========  -->
+  <!-- BODY -->
+  <!-- ========  -->
 
-<body class="background">
-  <!-- SVG in the top-left corner -->
-  <div class="top-left-logo">
-    <img src="assets/logo.svg" alt="Logo" />
-  </div>
-  <div class="container">
-    <div class="row justify-content-center">
-      <!-- ========  -->
-      <!-- MAIN COLUMN -->
-      <!-- ========  -->
-      <div class="col-md-8">
+  <body class="background">
+    <!-- SVG in the top-left corner -->
+    <div class="top-left-logo">
+      <img src="assets/logo.svg" alt="Logo" />
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
         <!-- ========  -->
-        <!-- NAV BAR -->
+        <!-- MAIN COLUMN -->
         <!-- ========  -->
-        <div class="navbar-container"></div>
+        <div class="col-md-8">
+          <!-- ========  -->
+          <!-- NAV BAR -->
+          <!-- ========  -->
+          <div class="navbar-container"></div>
 
-        <!-- ========  -->
-        <!-- ABOUT SECTION -->
-        <!-- ========  -->
-        <div class="row">
-          <h1>projects</h1>
-        </div>
+          <!-- ========  -->
+          <!-- ABOUT SECTION -->
+          <!-- ========  -->
+          <div class="row">
+            <h1>projects</h1>
+          </div>
 
-        <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+          <div class="row" style="padding-top: var(--inner-text-padding)"></div>
 
-        <div class="row">
-          <ul class="links-list">
-            <!-- ========  -->
-            <!-- FIREFOX THEMES -->
-            <!-- ========  -->
-            <li>
-              <a href="projects/macos-mojave-themes/macos-mojave-themes.html" class="link">macos-mojave-themes</a>,
-              firefox
-              themes & extension (2025)
-            </li>
-            <!-- ========  -->
-            <!-- PERSONAL WEBSITE -->
-            <!-- ========  -->
-            <li>
-              <a href="projects/personal_website/personal_website.html" class="link">personal-website</a>, the website
-              you're on (2024)
-            </li>
-            <!-- ========  -->
-            <!-- STUDENT MARKETPLACE-->
-            <!-- ========  -->
-            <li>
-              <a href="projects/student_marketplace/student_marketplace.html" class="link">student-marketplace</a>,
-              advertisement platform (2024)
-            </li>
-            <!-- ========  -->
-            <!-- BATTLESHIPS-->
-            <!-- ========  -->
-            <li>
-              <a href="projects/battleship/battleship.html" class="link">battleship</a>, player vs computer battleship
-              game (2024)
-            </li>
-            <!-- ========  -->
-            <!-- FILE COMPRESSOR -->
-            <!-- ========  -->
-            <li>
-              <a href="projects/project_hoth/project_hoth.html" class="link">project-hoth</a>, opengl robot mob shooter
-              (2023)
-            </li>
-            <!-- ========  -->
-            <!-- RECYLOPS -->
-            <!-- ========  -->
-            <li>
-              <a href="projects/recyclops/recyclops.html" class="link">recyclops</a>, waste image classifier (2021)
-            </li>
-          </ul>
+          <div class="row">
+            <ul class="links-list">
+              <!-- ========  -->
+              <!-- STATFLIX  -->
+              <!-- ========  -->
+              <li>
+                <a href="projects/statflix/statflix.html" class="link"
+                  >statflix</a
+                >, netflix history meets user statistics (2025)
+              </li>
+
+              <!-- ========  -->
+              <!-- FIREFOX THEMES -->
+              <!-- ========  -->
+              <li>
+                <a
+                  href="projects/macos-mojave-themes/macos-mojave-themes.html"
+                  class="link"
+                  >macos-mojave-themes</a
+                >, firefox themes & extension (2025)
+              </li>
+              <!-- ========  -->
+              <!-- PERSONAL WEBSITE -->
+              <!-- ========  -->
+              <li>
+                <a
+                  href="projects/personal_website/personal_website.html"
+                  class="link"
+                  >personal-website</a
+                >, the website you're on (2024)
+              </li>
+              <!-- ========  -->
+              <!-- STUDENT MARKETPLACE-->
+              <!-- ========  -->
+              <li>
+                <a
+                  href="projects/student_marketplace/student_marketplace.html"
+                  class="link"
+                  >student-marketplace</a
+                >, advertisement platform (2024)
+              </li>
+              <!-- ========  -->
+              <!-- BATTLESHIPS-->
+              <!-- ========  -->
+              <li>
+                <a href="projects/battleship/battleship.html" class="link"
+                  >battleship</a
+                >, player vs computer battleship game (2024)
+              </li>
+              <!-- ========  -->
+              <!-- FILE COMPRESSOR -->
+              <!-- ========  -->
+              <li>
+                <a href="projects/project_hoth/project_hoth.html" class="link"
+                  >project-hoth</a
+                >, opengl robot mob shooter (2023)
+              </li>
+              <!-- ========  -->
+              <!-- RECYLOPS -->
+              <!-- ========  -->
+              <li>
+                <a href="projects/recyclops/recyclops.html" class="link"
+                  >recyclops</a
+                >, waste image classifier (2021)
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    // Load footer
-    fetch("footer.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.body.insertAdjacentHTML("beforeend", data);
-        document.getElementById("current-year").textContent =
-          new Date().getFullYear();
-      })
-      .catch((error) => console.error("Error loading footer:", error));
-  </script>
-</body>
-
+    <script>
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.body.insertAdjacentHTML("beforeend", data);
+          document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
+  </body>
 </html>
