@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ========  -->
+  <!-- HEAD -->
+  <!-- ========  -->
+  <head>
+
+   
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z4KWCR3NS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Z4KWCR3NS');
+</script>
+
+
+    <!-- <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" /> -->
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript Library -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- NAVBAR-->
+    <!-- At the top of each HTML file -->
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector(".navbar-container").innerHTML = data;
+        });
+    </script>
+
+    <title>Shruti Sharma</title>
+  </head>
+
+  <!-- ========  -->
+  <!-- BODY -->
+  <!-- ========  -->
+  <body class="background">
+    <!-- SVG in the top-left corner -->
+    <!-- <div class="top-left-logo">
+      <img src="/assets/logo.svg" alt="Logo" />
+    </div> -->
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- ========  -->
+        <!-- MAIN COLUMN -->
+        <!-- ========  -->
+        <div class="col-md-8">
+          <!-- ========  -->
+          <!-- NAV BAR -->
+          <!-- ========  -->
+          <div class="navbar-container"></div>
+
+          <!-- ========  -->
+          <!-- WORK EXPERIENCE SECTION -->
+          <!-- ========  -->
+
+          <div class="row">
+            <h1>work</h1>
+          </div>
+
+          <div class="col"></div>
+          <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+          <div class="col"></div>
+
+          <!-- ========  -->
+          <!-- OPS - Assistant PM -->
+          <!-- ========  -->
+          <div class="job">
+            <div class="row">
+              <div class="col-md-3 year">
+                <div class="row">
+                  <h4>2023</h4>
+                </div>
+              </div>
+
+              <div class="row"></div>
+
+              <div class="col-md-9 details">
+                <div class="row">
+                  <h3>Assistant Project Manager</h3>
+                  <h5>Ontario Public Service</h5>
+                  <p class="description">
+                    Led execution of 20+ infrastructure and digital projects, aligning technical roadmaps and stakeholder goals. Redesigned SharePoint site used by 100+ team members, improving collaboration and accessibility. Delivered updates to executives by translating metrics into insights and streamlined workflows to accelerate delivery by 15%.
+                  </p>
+                  <p class="technologies">
+                    Agile Project Delivery • Stakeholder Communication • SharePoint • KPI Tracking & Risk Management • Excel
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col"></div>
+
+          <!-- ========  -->
+          <!-- The Bay - Jr. Architect -->
+          <!-- ========  -->
+          <div class="job">
+            <div class="row">
+              <div class="col-md-3 year">
+                <div class="row">
+                  <h4>2022</h4>
+                </div>
+              </div>
+
+              <div class="row"></div>
+
+              <div class="col-md-9 details">
+                <!-- Job title -->
+                <div class="row">
+                  <h3>Junior Solutions Architect</h3>
+                </div>
+              
+                <!-- Company name -->
+                <div class="row">
+                  <h5>The Bay</h5>
+                </div>
+              
+                <!-- Description -->
+                <div class="row">
+                  <p class="description">
+                    Contributed to product roadmap by supporting an SFTP migration project, improving scalability. Authored QA documentation to onboard developers faster and modernized return policy tools, reducing processing delays by 25%. Participated in agile sprint planning and system demos.
+                  </p>
+                </div>
+              
+                <!-- Skills -->
+                <div class="row">
+                  <p class="technologies">
+                    QA Documentation • Performance Optimization • SFTP Server Migration • Project Management
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col"></div>
+
+          <!-- ========  -->
+          <!-- OPS - Architecture Analyst -->
+          <!-- ========  -->
+          <div class="job">
+            <div class="row">
+              <div class="col-md-3 year">
+                <div class="row">
+                  <h4>2021</h4>
+                </div>
+              </div>
+
+              <div class="row"></div>
+
+              <div class="col-md-9 details">
+                <div class="row">
+                  <h3>Architecture Support Analyst</h3>
+                  <h5>Ontario Public Service</h5>
+                  <p class="description">
+                    Researched emerging technologies to support digital strategy and inclusive product design. Created AODA-compliant dashboards and conducted policy gap analysis to identify platform improvement opportunities. Worked closely with senior stakeholders to align roadmaps with user needs.
+                  </p>
+                  <p class="technologies">
+                    Excel • Emerging Tech Research • AODA Standards • Policy Gap Analysis • Strategic Roadmap Support 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Load footer
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.body.insertAdjacentHTML("beforeend", data);
+          document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
+  </body>
+</html>

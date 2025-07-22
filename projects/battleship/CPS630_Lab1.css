@@ -1,0 +1,150 @@
+/* Set up basic styles for the body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #bae1ff;
+}
+
+/* Style the reset button */
+#reset-btn {
+  background-color: #305e93; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1px;
+  margin-left: 35px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Change button color on hover */
+#reset-btn:hover {
+  background-color: #7a9aae; 
+}
+
+
+/* Container for the entire game */
+.game-container {
+  display: flex;
+  align-items: center; 
+}
+
+/* Styles for the game board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  gap: 2px;
+  border: 1px solid #000;
+  margin: 10px;
+  background-color: white; 
+}
+
+/* Styles for grid headings */
+.grid-heading {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Container for each board */
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles for hit/miss counters */
+.counters {
+  margin-top: 10px; 
+}
+
+/* Styles for each cell in the grid */
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for ships */
+.ship {
+  width: 30px; /* Adjust width to match the image */
+  height: 30px; /* Adjust height to match the image */
+  background-image: url('https://i.pinimg.com/474x/6d/8b/f5/6d8bf5580b0fa7c81ced50b53d5c8247.jpg'); /* URL of the ship image */
+  background-size: cover; /* Ensure the background image covers the entire element */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  margin: 2px;
+  cursor: pointer;
+  position: relative; /* Ensure relative positioning for the ships */
+}
+
+/* Styles for the hovered cell */
+.hovered {
+  border: 2px dashed #000;
+}
+
+/* Adjust styles for cells with hits */
+.cell.hit {
+  background-image: none !important;
+  background-color: green !important; 
+}
+
+/* Hide ship image for cells with hits */
+.cell.hit .ship {
+  display: none; /* Hide the ship image */
+}
+
+/* Adjust styles for cells with misses */
+.miss {
+  background-color: red; 
+}
+
+/* Styles for general buttons */
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Container for buttons */
+.button-container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Styles for player cells */
+.player-cell {
+  cursor: not-allowed;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Custom styles for pop-up messages */
+.alert {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #305e93; 
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  bottom: 20px;
+  left: 50%; 
+  transform: translateX(-50%); 
+}

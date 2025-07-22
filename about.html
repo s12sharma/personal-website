@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ========  -->
+  <!-- HEAD -->
+  <!-- ========  -->
+  <head>
+   
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z4KWCR3NS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6Z4KWCR3NS');
+</script>
+
+
+    <!-- <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" /> -->
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript Library -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- NAVBAR-->
+    <!-- At the top of each HTML file -->
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector(".navbar-container").innerHTML = data;
+        });
+    </script>
+
+    <title>Shruti Sharma</title>
+  </head>
+
+  <!-- ========  -->
+  <!-- BODY -->
+  <!-- ========  -->
+  <body class="background">
+    <!-- SVG in the top-left corner -->
+    <!-- <div class="top-left-logo">
+      <img src="assets/logo.svg" alt="Logo" />
+    </div> -->
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- ========  -->
+        <!-- MAIN COLUMN -->
+        <!-- ========  -->
+        <div class="col-md-8">
+          <!-- ========  -->
+          <!-- NAV BAR -->
+          <!-- ========  -->
+          <div class="navbar-container"></div>
+
+          <!-- ========  -->
+          <!-- ABOUT SECTION -->
+          <!-- ========  -->
+          <div class="row">
+            <h1>about</h1>
+          </div>
+
+          <div class="row" style="padding-top: var(--inner-text-padding)"></div>
+
+          <div class="row">
+            <h5>
+              Hi! I’m a recent Computer Science graduate from Toronto Metropolitan University with a passion for building products that solve real problems. 
+              I’ve worked across public and retail sectors as a project manager, solutions architect, and analyst, delivering impactful digital services by aligning user needs, 
+              technical delivery, and strategic goals.
+            </h5>
+
+            <div
+              class="row"
+              style="padding-top: var(--inner-text-padding)"
+            ></div>
+
+            <h5>
+              At the Ontario Public Service, I led over 20 digital and infrastructure projects, improved team collaboration with a SharePoint redesign, and 
+              presented risk mitigation insights to senior stakeholders. I also contributed to backend architecture and QA documentation during my time at The Bay, 
+              and supported accessibility-focused reporting and digital strategy as an analyst.
+            </h5>
+
+            <div
+            class="row"
+            style="padding-top: var(--inner-text-padding)"
+          ></div>
+
+          <h5>
+            To continue sharpening my PM toolkit, I’m currently completing the
+            <a
+              href="https://www.coursera.org/professional-certificates/google-project-management"
+              target="_blank"
+              class="link"
+              >Google Project Management Certificate</a
+            >, focused on agile delivery, stakeholder communication, and end-to-end product planning.
+          </h5>
+          
+          </div>
+
+          <div style="padding-top: var(--big-text-padding)"></div>
+
+          <!-- ========  -->
+          <!-- MAIN COLUMN END -->
+          <!-- ========  -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ========  -->
+    <!-- JAVASCRIPT CODE -->
+    <!-- ========  -->
+
+    <!-- Other Stuff -->
+    <!-- <script src="js/other-stuff/reading-stuff.js"></script> -->
+
+    <!-- Projects (if needed) -->
+
+    <script>
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.body.insertAdjacentHTML("beforeend", data);
+          document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
+  </body>
+</html>

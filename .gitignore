@@ -1,0 +1,57 @@
+# macOS system files
+.DS_Store
+
+# Node modules (if you're using a build tool like npm, vite, parcel, etc.)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# Editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment files
+.env
+.env.*
+
+# Cache
+.cache/
+.next/
+.out/
+.tmp/
+*.tgz
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS metadata files
+.AppleDouble
+.LSOverride
+
+# Deployment
+*.zip
+*.tar.gz
+
+# GitHub Pages
+*.publish/

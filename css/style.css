@@ -1,0 +1,297 @@
+:root {
+  /*******************/
+  /** COLORS **/
+  /*******************/
+  --background-color: #2a2f38;            /* Slate charcoal (not black) */
+  --header-color: #f0f0f0;                /* Soft light grey */
+  --navigation-menu-color: #a5c9ca;       /* Pastel teal */
+  --link-color: #c3bfd9;                  /* Muted lavender */
+  --work-experience-year-color: #d6cfc7;  /* Sandy beige-grey */
+  --work-experience-description-color: #dddddd; /* Soft grey-white */
+  --work-experience-skills-color: #b8b8b8;      /* Mid pastel grey */
+
+  /*******************/
+  /** PADDING **/
+  /*******************/
+  --big-text-padding: 30px;
+  --inner-text-padding: 15px;
+  --header-text-padding: 5px;
+  --list-text-padding: 5px;
+}
+
+/*******************/
+/** FONT **/
+/*******************/
+.anonymous-pro-regular {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anonymous-pro-bold {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*******************/
+/** GENERAL **/
+/*******************/
+.background {
+  background-color: var(--background-color);
+}
+
+body {
+  padding: 20px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--header-color);
+  font-family: "Anonymous Pro", monospace;
+  margin: 0;
+  /* Remove default margin */
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+li {
+  margin-bottom: var(--list-text-padding);
+  color: var(--header-color);
+  /* Match the header color defined in :root */
+  font-family: "Anonymous Pro", monospace;
+  /* Match the font family */
+  font-weight: 400;
+  /* Match the font weight of h4 */
+  font-style: normal;
+  /* Ensure normal font style */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 1.5rem;
+  /* Set the font size to match h4 */
+}
+
+/*******************/
+/** NAV BAR **/
+/*******************/
+.links {
+  display: flex;
+  /* Use flexbox for layout */
+  align-items: center;
+  /* Center items vertically */
+}
+
+.link {
+  color: var(--link-color);
+  /* Match the header color defined in :root */
+  font-family: "Anonymous Pro", monospace;
+  /* Match the font family */
+  font-weight: 400;
+  /* Match the font weight of h4 */
+  font-style: normal;
+  /* Ensure normal font style */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 1.5rem;
+  /* Set the font size to match h4 */
+}
+
+.link:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+/* Add space around the vertical bar */
+.link-item {
+  margin: 0 10px;
+  /* Add horizontal margin for spacing */
+}
+
+span {
+  color: var(--header-color);
+}
+
+/*******************/
+/** LINKS SECTION **/
+/*******************/
+.links-list {
+  list-style-type: disc;
+  color: white;
+}
+
+/*******************/
+/** FOOTER SECTION **/
+/*******************/
+.footer {
+  background-color: var(--background-color);
+  /* Match your background color */
+  color: var(--header-color);
+  /* Text color */
+  padding: 20px 0;
+  /* Vertical padding */
+  position: relative;
+  /* Positioning */
+  bottom: 0;
+  /* Aligns to the bottom */
+  width: 100%;
+  /* Full width */
+}
+
+.footer p {
+  margin: 0;
+  /* Remove default margin */
+}
+
+/*******************/
+/** LOGO SECTION **/
+/*******************/
+.top-left-logo {
+  position: absolute;
+  /* Stays at the top-left of the viewport */
+  top: 0;
+  /* Align to the very top */
+  left: 0;
+  /* Align to the very left */
+  z-index: 10;
+  /* Make sure it's on top of other elements */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}
+
+.top-left-logo img {
+  width: 150px;
+  /* Adjust this to make the SVG larger */
+  height: auto;
+  /* Keep the aspect ratio */
+}
+
+.nav-header {
+  padding-top: 100px;
+  /* Adjust this based on the height of the SVG */
+}
+
+/* Responsive scaling for mobile */
+@media (max-width: 768px) {
+  .top-left-logo img,
+  .top-left-logo svg {
+    width: 80px;
+    /* Smaller size for mobile */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+}
+
+/*******************/
+/** WORK SECTION **/
+/*******************/
+.job {
+  margin-bottom: var(--big-text-padding);
+}
+
+.row {
+  display: flex;
+}
+
+/* Left align the year and ensure it's aligned with the header */
+.year {
+  text-align: left;
+  min-width: 150px;
+  /* Adjust this width if necessary */
+}
+
+.details h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.details p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.details h5,
+p {
+  margin-bottom: var(--inner-text-padding);
+}
+
+.details h3 {
+  margin-bottom: var(--list-text-padding);
+}
+
+.technologies {
+  font-size: 1.1em;
+  margin-bottom: 0px;
+}
+
+/** COLORS **/
+
+.details h3,
+h5 {
+  color: white;
+}
+
+p.description {
+  color: var(--work-experience-description-color);
+}
+
+p.technologies {
+  color: var(--work-experience-skills-color);
+}
+
+.year h4 {
+  color: var(--work-experience-year-color);
+}
+
+/*******************/
+/** PROJECTS SECTION **/
+/*******************/
+.link-header {
+  color: var(--link-color);
+  /* Set color to match .link */
+  font-family: "Anonymous Pro", monospace;
+  /* Match the font family */
+  font-weight: 700;
+  /* Same font weight as h1 */
+  font-style: normal;
+  /* Ensure normal font style */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 2.5rem;
+  /* Font size can be adjusted to your preference */
+  margin: 0;
+  /* Remove default margin, similar to h1 */
+  line-height: 1.2;
+  /* Adjust line height to center vertically */
+}
+
+.responsive-video {
+  width: 100%;
+  /* Make video take the full width of the container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  max-width: 600px;
+  /* Optional: Set a maximum width for larger screens */
+}
+
+p.project-technologies {
+  color: var(--work-experience-year-color);
+  font-size: 1.2rem;
+}
+
+.project-logo {
+  width: 40%;
+  height: auto;
+  max-width: 600px;
+}
